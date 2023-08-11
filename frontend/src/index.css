@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+
+}
+.nav-logo {
+  height: 30px;
+  padding: 0px 10px;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+  margin-right: 7px; 
+  padding: 0px 10px;
+}
+
+.nav-elements {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-text {
+  padding: 0px 10px;
+}
+.nav-title {
+  margin-right: auto;
+  font-family: 'Inter', sans-serif;
+  color: #616bfb;
+  font-weight: 700;
+  font-size: 22px;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  background-repeat:repeat;
+  background-image: url(assets/background.jpg);
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+footer {
+    display: flex;
+    background-color:#f4f4f4;
+    align-items:baseline;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0px 30px;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+}
+article {
+    margin: 75px 100px;
+    background-color: rgba(255,255,255,0.2);
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+header {
+  text-align:center;
+}
+header, h1 {
+  font-size: 100px;
+  font-weight: 200;
+  color: #151b79d5;
+}
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;    
+}
+.space {
+    width: 400px;
+    height: 200px;
+}
+input {
+  font-size: 20px;
+  color: #151b79d5;
+  border: none;
+  width: 100%;
+  outline: navajowhite;
+  border-bottom: 2px solid #151b79d5;
+  background-color: rgba(255,255,255,0.2);
+}
