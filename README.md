@@ -1,8 +1,44 @@
-# React + Vite
+# TODO LIST APP
+## /todolist/
+### This is a FULLSTACK app that uses Firebase, ReactJS and Tailwind css
+#### hosted at-
+https://ilorde-exe.github.io/todolist/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Getting Started
 
-Currently, two official plugins are available:
+### Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- NodeJS version 8+
+- Modern Browser
+
+### Installation/Building from source
+
+To install application:
+
+1. Clone the repository.
+
+   `git clone https://github.com/ilorde-exe/react-info-site`
+
+2. Install node modules to build the app.
+  
+   `cd <FILE LOCATION>`
+   
+   `npm install`
+   
+   FOR DEV SERVER
+   
+   `npm run dev`
+   
+   TO BUILD 
+   
+   `npm run build`
+   
+   TO PREVIEW BUILT SITE
+   
+   `npm run preview`
+   
+   Also if you want to connect this app to your own database you need to change to keys in the .env file :D
+
+
+#### Note: I made this with vscode so I suggest you do too
+
