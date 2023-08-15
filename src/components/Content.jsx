@@ -13,6 +13,11 @@ import {
 
 const s = {
   text: `ml-2 font-mono text-center text-xl`,
+  form: `flex p-4 gap-4`,
+  title: `text-8xl text-center font-sans font-thin font-extrabold text-indigo-900 p-8`,
+  input: `py-3 px-5 border-2 block w-full border-indigo-900 rounded-full text-l focus:border-indigo-900 focus:ring-indigo-900 bg-slate-50 bg-opacity-20 border-indigo-900 text-indigo-900 placeholder-black font-mono`,
+  main: `bg-slate-50 bg-opacity-10 rounded-2xl shadow-md p-10 m-20`,
+  button: `flex h-12 w-12`,
 };
 
 export default function Content() {
@@ -56,11 +61,11 @@ export default function Content() {
   //Render elements
   return (
     <>
-      <article>
-        <header className="todo-title">Todolist</header>
-        <form className="form" onSubmit={createTask}>
+      <article className={s.main}>
+        <header className={s.title}>Todolist</header>
+        <form className={s.form} onSubmit={createTask}>
           <input
-            className="add-task"
+            className={s.input}
             value={input}
             type="text"
             placeholder="Enter another task.."
@@ -68,8 +73,8 @@ export default function Content() {
               setInput(e.target.value);
             }}
           />
-          <button className="add-button">
-            <img src="public/more.png" alt="add button" />
+          <button className={s.button}>
+            <img className={s.plus} src="/more.png" alt="add button" />
           </button>
         </form>
         <ul>
