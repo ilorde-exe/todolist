@@ -11,9 +11,14 @@ import {
   deleteDoc,
 } from "@firebase/firestore";
 
+const s = {
+  text: `ml-2 font-mono text-center text-xl`,
+};
+
 export default function Content() {
   const [tasks, setTask] = useState([]);
   const [input, setInput] = useState("");
+
   //Create Task
   const createTask = async (e) => {
     e.preventDefault(e);
@@ -24,6 +29,7 @@ export default function Content() {
     await addDoc(collection(db, "tasks"), { text: input, completed: false });
     setInput("");
   };
+
   //Read tasks
   useEffect(() => {
     const q = query(collection(db, "tasks"));
@@ -36,15 +42,18 @@ export default function Content() {
     });
     return () => unsubscribe();
   }, []);
+
   //Update tasks
   const handleClick = async (task) => {
     await updateDoc(doc(db, "tasks", task.id), { completed: !task.completed });
   };
+
   //Delete tasks
   const deleteTask = async (id) => {
     await deleteDoc(doc(db, "tasks", id));
   };
-  //Render
+
+  //Render elements
   return (
     <>
       <article>
@@ -73,7 +82,7 @@ export default function Content() {
             />
           ))}
         </ul>
-        <p className="">You have {tasks.length} tasks</p>
+        <p className={s.text}>You have {tasks.length} tasks</p>
       </article>
     </>
   );

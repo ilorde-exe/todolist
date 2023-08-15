@@ -13,25 +13,6 @@ body {
   background-image: url(assets/background.jpg);
   background-size: cover;
 }
-a {
-  text-decoration: none;
-  color: black;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-}
-footer {
-    display: flex;
-    background-color:#f4f4f4;
-    align-items:baseline;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 0px 30px;
-    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-}
 article {
     margin: 75px 100px;
     background-color: rgba(255,255,255,0.2);
@@ -50,10 +31,7 @@ p {
     font-family: 'Inter', sans-serif;
     font-weight: 400;    
 }
-.space {
-    width: 400px;
-    height: 200px;
-}
+
 .add-task {
   font-size: 20px;
   color: #151b79d5;
