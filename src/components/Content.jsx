@@ -11,15 +11,17 @@ import {
   deleteDoc,
 } from "@firebase/firestore";
 
+//Tailwind css classes
 const s = {
   text: `ml-2 font-mono text-center text-xl`,
   form: `flex p-4 gap-4`,
   title: `text-8xl text-center font-sans font-thin font-extrabold text-indigo-900 p-8`,
   input: `py-3 px-5 border-2 block w-full border-indigo-900 rounded-full text-l focus:border-indigo-900 focus:ring-indigo-900 bg-slate-50 bg-opacity-20 border-indigo-900 text-indigo-900 placeholder-black font-mono`,
-  main: `bg-slate-50 bg-opacity-10 rounded-2xl shadow-md p-10 m-20`,
+  main: `bg-slate-50 bg-opacity-10 rounded-2xl shadow-md p-10 mx-20 my-1`,
   button: `flex h-12 w-12`,
 };
 
+//Main Component
 export default function Content() {
   const [tasks, setTask] = useState([]);
   const [input, setInput] = useState("");
