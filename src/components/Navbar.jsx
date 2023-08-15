@@ -1,8 +1,7 @@
 import React from "react";
 const s = {
-  nav: `flex `,
-  logo: ``,
-  title: ``,
+  nav: `flex justify-center`,
+  title: `font-mono text-2xl `,
 };
 
 export default function Navbar() {
@@ -10,12 +9,7 @@ export default function Navbar() {
     <>
       <nav>
         <div className={s.nav}>
-          <img
-            src="https://seeklogo.com/images/V/vite-logo-BFD4283991-seeklogo.com.png"
-            alt="Vite logo"
-            className={s.logo}
-          />
-          <h2 className={s.title}>Basic app</h2>
+          <h2 className={s.title}>Made with React + Tailwind + Firebase</h2>
         </div>
       </nav>
     </>
