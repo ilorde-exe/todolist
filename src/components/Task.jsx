@@ -27,7 +27,7 @@ const Task = ({ task, handleClick, deleteTask }) => {
         </p>
       </div>
       <button onClick={() => deleteTask(task.id)}>
-        <img className={s.trash} src="/trash.png" alt="trash" />
+        <img className={s.trash} src="./trash.png" alt="trash" />
       </button>
     </li>
   );

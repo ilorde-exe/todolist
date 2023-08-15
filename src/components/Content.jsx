@@ -76,7 +76,7 @@ export default function Content() {
             }}
           />
           <button className={s.button}>
-            <img className={s.plus} src="/more.png" alt="add button" />
+            <img className={s.plus} src="./more.png" alt="add button" />
           </button>
         </form>
         <ul>
