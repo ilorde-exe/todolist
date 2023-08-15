@@ -1,7 +1,6 @@
 # TODO LIST APP
+## /todolist/
 ### This is a FULLSTACK app that uses Firebase, ReactJS and Tailwind css
-
-## /react-info-site/
 #### hosted at-
 https://ilorde-exe.github.io/todolist/
 
