@@ -17,7 +17,7 @@ To install application:
 
 1. Clone the repository.
 
-   `git clone https://github.com/ilorde-exe/react-info-site`
+   `git clone https://github.com/ilorde-exe/todolist`
 
 2. Install node modules to build the app.
   
